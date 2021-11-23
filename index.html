@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lazy Images</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/logos/logo.png" alt="logo" class="left" />
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">PROJECTS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="about">
+      <h1>Connect with the world here</h1>
+      <div class="cta">
+        <h3>Contact Us</h3>
+        <button class="btn">Contact</button>
+      </div>
+    </section>
+    <section class="work">
+      <div class="container">
+        <img
+          src="images/others/iconfinder-128-removebg-preview.png"
+          alt="garage"
+        />
+        <div class="temp">
+          <h4>Sustainable</h4>
+          <h2>Warehousing Services</h2>
+        </div>
+      </div>
+      <div class="container">
+        <img src="images/others/air-removebg-preview.png" alt="garage" />
+        <div class="temp">
+          <h4>Reliable</h4>
+          <h2>AirFreight Services</h2>
+        </div>
+      </div>
+      <div class="container">
+        <img src="images/others/ship-removebg-preview.png" alt="garage" />
+        <div class="temp">
+          <h4>Innovative</h4>
+          <h2>Ocean Freight Services</h2>
+        </div>
+      </div>
+      <div class="container">
+        <img src="images/others/truck.png" alt="garage" />
+        <div class="temp">
+          <h4>Flexible</h4>
+          <h2>Road Freight Services</h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="warehouse">
+      <h1>Our Projects</h1>
+      <div class="projects">
+        <div class="projectOne">
+          <img src="images/others/proj1.jpg" alt="project1" height="300" />
+          <div class="details">
+            <div class="head">
+              <h3>Floride Chemicals Factory</h3>
+              <h4>Analytics, Optimization</h4>
+            </div>
+
+            <p>
+              We understand that data is greatest asset when it comes to
+              analyzing and optimizing your supply…
+            </p>
+            <a href="#"> <span>&#8594;</span> Explore Case Study</a>
+          </div>
+        </div>
+        <div class="projectOne">
+          <img src="images/others/proj2.jpg" alt="project1" height="300" />
+          <div class="details">
+            <div class="head">
+              <h3>Warehouse On-Hand Inventory</h3>
+              <h4>Distribution, Warehousing</h4>
+            </div>
+
+            <p>
+              Cost savings is crucial, innovative technology minimizes your
+              overall spend by utilizing an extensive consolidation of…
+            </p>
+            <a href="#"> <span>&#8594;</span> Explore Case Study</a>
+          </div>
+        </div>
+        <div class="projectOne">
+          <img src="images/others/proj3.jpg" alt="project1" height="300" />
+          <div class="details">
+            <div class="head">
+              <h3>Minimize Cost of Manufacturing</h3>
+              <h4>Analytics, Logistic</h4>
+            </div>
+
+            <p>
+              Our Group has been building relationships and projects last.
+              Serving an impressive list of long-term clients…
+            </p>
+            <a href="#"> <span>&#8594;</span> Explore Case Study</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote">
+      <div class="quote-tab">
+        <div
+          class="
+            quote-tab-div quote-tab-1 quote-tab-active quote-tab-div-active
+          "
+          data-tab="1"
+        >
+          <span>
+            <img src="images/icons/package.svg" alt="package" height="40" />
+            Request a Quote
+          </span>
+        </div>
+        <div class="quote-tab-div quote-tab-2 quote-tab-active" data-tab="2">
+          <span>
+            <img src="images/icons/location.svg" alt="package" height="40" />
+            Track The Package
+          </span>
+        </div>
+      </div>
+      <div class="quote-content quote-content-1">
+        <form action="POST">
+          <div class="dataName">
+            <label for="name">Personal Data</label>
+            <input type="text" placeholder="Name *" id="name" required />
+            <input type="email" placeholder="Mail *" required />
+            <input type="phone" placeholder="Phone *" required />
+
+            <label for="shipment">Shipment Data</label>
+            <input type="text" placeholder="Freight Type" id="name" />
+            <input type="text" placeholder="Departure City" />
+            <select name="Incoterms" id="inco">
+              <option value="Incoterms">Incoterms</option>
+              <option value="Incoterms1">Incoterms1</option>
+              <option value="Incoterms2">Incoterms2</option>
+            </select>
+            <span class="span"
+              ><input type="text" class="mesure" placeholder="Weight" />
+              <input type="text" class="mesure" placeholder="Height" />
+              <input type="text" class="mesure" placeholder="Width" />
+              <input type="text" class="mesure" placeholder="Length"
+            /></span>
+
+            <span class="radio">
+              <label
+                ><input
+                  type="radio"
+                  id="express"
+                  name="choosed_service"
+                  value="express"
+                />Express Delivery</label
+              >
+              <label>
+                <input
+                  type="radio"
+                  id="insurance"
+                  name="choosed_service"
+                  value="insurance"
+                />Insurance
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  id="fragile"
+                  name="choosed_service"
+                  value="service"
+                />
+                Fragile
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  id="packing"
+                  name="choosed_service"
+                  value="packing"
+                />Packing
+              </label>
+            </span>
+            <input type="submit" value="Request a quote" class="btn-form" />
+          </div>
+        </form>
+      </div>
+      <div class="quote-content quote-content-2 inactive">
+        <form action="POST">
+          <div class="dataName">
+            <label for="data">Shipment Data</label
+            ><select name="Shipment" id="ship">
+              <option value="Type1">Shipment Type1</option>
+              <option value="Type2">Shipment Type2</option>
+              <option value="Type3">Shipment Type3</option>
+            </select>
+            <label for="track">Tracking Number</label>
+            <textarea
+              name="tracking"
+              id="track"
+              cols="30"
+              rows="10"
+              maxlength="200"
+              placeholder="You can enter up to a maximum of 10 airway bill numbers for tracking"
+            ></textarea>
+            <span class="radio">
+              <label
+                ><input
+                  type="radio"
+                  id="airFreight"
+                  name="choosed_delivery"
+                  value="airFreight"
+                />Air Freight</label
+              >
+              <label>
+                <input
+                  type="radio"
+                  id="ocean"
+                  name="choosed_delivery"
+                  value="ocean"
+                />Ocean Freight
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  id="road"
+                  name="choosed_delivery"
+                  value="road"
+                />
+                Road Freight
+              </label>
+              <label>
+                <input
+                  type="radio"
+                  id="express"
+                  name="choosed_delivery"
+                  value="express"
+                />Express Delivery
+              </label>
+            </span>
+            <input type="submit" value="Track & Trace" class="btn-form" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="scrypt.js"></script>
+  </body>
+</html>

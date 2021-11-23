@@ -1,0 +1,296 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #21d4fd;
+  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid black;
+  background-color: cadetblue;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 15px 15px 0 0;
+  justify-content: space-around;
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+.about {
+  background:
+  /* top, transparent black, faked with gradient */ linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(images/others/marcin.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.about h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: white;
+  font-size: 48px;
+  /*   background-color: white; */
+  width: 50%;
+  padding-top: 20px;
+  font-family: "ChunkFive-Regular", "Courier New", Courier, monospace;
+}
+
+.cta {
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+}
+
+.cta h3 {
+  text-align: center;
+  color: red;
+  margin-bottom: 8px;
+}
+
+.btn {
+  -webkit-border-radius: 18;
+  -moz-border-radius: 18;
+  border-radius: 18px;
+  -webkit-box-shadow: 3px 2px 5px #666666;
+  -moz-box-shadow: 3px 2px 5px #666666;
+  box-shadow: 3px 2px 5px #666666;
+  font-family: Courier New;
+  color: #fcfcfc;
+  font-size: 15px;
+  background: #d93442;
+  padding: 5px 10px 8px 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #fc3c3c;
+  text-decoration: none;
+}
+
+.work {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  border: 1px solid rgb(147, 144, 144);
+  width: 350px;
+  background-color: white;
+}
+
+.container img {
+  height: 64px;
+  width: 64px;
+}
+
+.temp {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.temp h4 {
+  color: gray;
+}
+
+.warehouse {
+  border-bottom: 0.5px solid black;
+}
+
+.warehouse h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 32px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+}
+
+.projectOne {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 40px;
+  box-shadow: 6.9px 4.8px 3.7px -6px rgba(0, 0, 0, 0.061),
+    23.2px 16.1px 12.3px -6px rgba(0, 0, 0, 0.089),
+    104px 72px 55px -6px rgba(0, 0, 0, 0.15);
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 0.5px solid black;
+  border-top: none;
+  height: 350px;
+  padding: 10px;
+  background-color: blanchedalmond;
+}
+.details h3 {
+  line-height: 30px;
+}
+
+.projectOne h4 {
+  color: red;
+}
+
+.projectOne a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.projectOne a:hover {
+  color: red;
+}
+
+.projectOne span {
+  color: red;
+}
+
+.quote-tab {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.quote-tab-div {
+  width: 400px;
+  height: 100px;
+  border: 2px solid black;
+  padding: 9px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.quote-tab-1 {
+  border-right: 1px solid white;
+}
+
+.quote-tab-div span img {
+  margin-right: 15px;
+}
+
+.quote-tab-div-active {
+  background-color: red;
+}
+.quote-content {
+  width: 800px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.dataName {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 15px;
+}
+
+.dataName input,
+select,
+textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.dataName label {
+  font-weight: bold;
+  font-size: 24px;
+  padding-bottom: 26px;
+}
+
+.span {
+  margin-top: 20px;
+}
+.mesure {
+  width: 47.5%;
+}
+
+.span input:nth-child(odd) {
+  margin-right: 25px;
+}
+
+.radio {
+  margin-left: 50px;
+}
+
+.radio label {
+  margin: 20px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.btn-form {
+  background-color: black;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.btn-form:hover {
+  background-color: rgb(41, 40, 40);
+}
+
+.inactive {
+  display: none;
+}
