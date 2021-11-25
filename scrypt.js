@@ -1,6 +1,11 @@
 const quoteTabs = document.querySelectorAll(".quote-tab-div");
 const qouteContainer = document.querySelector(".quote-tab");
 const qouteContent = document.querySelectorAll(".quote-content");
+const spanLink = document.getElementById("linkic");
+console.log(spanLink);
+const hovered = document.querySelectorAll(".inactive2");
+
+console.log(hovered);
 
 qouteContainer.addEventListener("click", function (e) {
   const clicked = e.target.closest(".quote-tab-div");

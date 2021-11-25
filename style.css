@@ -7,6 +7,7 @@
 body {
   background-color: #21d4fd;
   background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 header {
@@ -184,18 +185,23 @@ nav ul li a {
   color: red;
 }
 
-.projectOne a {
+.link {
   text-decoration: none;
   color: black;
   font-weight: bold;
 }
 
-.projectOne a:hover {
+.link:hover {
   color: red;
 }
 
 .projectOne span {
   color: red;
+}
+
+.quote-container {
+  padding-bottom: 50px;
+  border-bottom: 0.5px solid black;
 }
 
 .quote-tab {
@@ -209,7 +215,7 @@ nav ul li a {
   width: 400px;
   height: 100px;
   border: 2px solid black;
-  padding: 9px;
+  padding: 20px;
   display: flex;
   justify-content: space-evenly;
   background-color: black;
@@ -293,4 +299,118 @@ textarea {
 
 .inactive {
   display: none;
+}
+
+.pricing {
+  border: 1px solid black;
+}
+
+.pricing-container {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.h3-style {
+  color: #e11d07;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.pricing h1 {
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.right-part {
+  margin-left: 50px;
+  width: 80%;
+}
+
+.right-part img {
+  border: 2px solid red;
+  padding: 1px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.btn-pricing {
+  padding: 10px 20px;
+  color: #fc3c3c;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid red;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.btn-pricing:hover {
+  color: white;
+  background-color: #fc3c3c;
+}
+
+.profile {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contact-rep {
+  text-align: center;
+}
+
+.contact-rep span {
+  font-weight: bold;
+}
+
+.contact-rep p {
+  color: rgb(81, 81, 81);
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.article {
+  margin: 50px;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h1 {
+  margin-bottom: 15px;
+}
+
+.article-content-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.article-content {
+  width: 300px;
+}
+
+.article-content h4 {
+  font-weight: normal;
+  color: #fc3c3c;
+}
+
+.article-content h5 {
+  font-weight: normal;
+  color: rgb(68, 67, 67);
+}
+
+.inactive2 {
+  display: none;
+}
+
+.link:hover .inactive2 {
+  display: inline-block;
 }

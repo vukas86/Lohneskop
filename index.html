@@ -74,7 +74,9 @@
               We understand that data is greatest asset when it comes to
               analyzing and optimizing your supply…
             </p>
-            <a href="#"> <span>&#8594;</span> Explore Case Study</a>
+            <a href="#" class="link">
+              <span>&#8594;</span> Explore Case Study</a
+            >
           </div>
         </div>
         <div class="projectOne">
@@ -89,7 +91,9 @@
               Cost savings is crucial, innovative technology minimizes your
               overall spend by utilizing an extensive consolidation of…
             </p>
-            <a href="#"> <span>&#8594;</span> Explore Case Study</a>
+            <a href="#" class="link">
+              <span>&#8594;</span> Explore Case Study</a
+            >
           </div>
         </div>
         <div class="projectOne">
@@ -104,150 +108,274 @@
               Our Group has been building relationships and projects last.
               Serving an impressive list of long-term clients…
             </p>
-            <a href="#"> <span>&#8594;</span> Explore Case Study</a>
+            <a href="#" class="link">
+              <span>&#8594;</span> Explore Case Study</a
+            >
           </div>
         </div>
       </div>
     </section>
 
     <section class="quote">
-      <div class="quote-tab">
-        <div
-          class="
-            quote-tab-div quote-tab-1 quote-tab-active quote-tab-div-active
-          "
-          data-tab="1"
-        >
-          <span>
-            <img src="images/icons/package.svg" alt="package" height="40" />
-            Request a Quote
-          </span>
+      <div class="quote-container">
+        <div class="quote-tab">
+          <div
+            class="
+              quote-tab-div quote-tab-1 quote-tab-active quote-tab-div-active
+            "
+            data-tab="1"
+          >
+            <span>
+              <img src="images/icons/package.svg" alt="package" height="40" />
+              Request a Quote
+            </span>
+          </div>
+          <div class="quote-tab-div quote-tab-2 quote-tab-active" data-tab="2">
+            <span>
+              <img src="images/icons/location.svg" alt="package" height="40" />
+              Track The Package
+            </span>
+          </div>
         </div>
-        <div class="quote-tab-div quote-tab-2 quote-tab-active" data-tab="2">
-          <span>
-            <img src="images/icons/location.svg" alt="package" height="40" />
-            Track The Package
-          </span>
+        <div class="quote-content quote-content-1">
+          <form action="POST">
+            <div class="dataName">
+              <label for="name">Personal Data</label>
+              <input type="text" placeholder="Name *" id="name" required />
+              <input type="email" placeholder="Mail *" required />
+              <input type="phone" placeholder="Phone *" required />
+
+              <label for="shipment">Shipment Data</label>
+              <input type="text" placeholder="Freight Type" id="name" />
+              <input type="text" placeholder="Departure City" />
+              <select name="Incoterms" id="inco">
+                <option value="Incoterms">Incoterms</option>
+                <option value="Incoterms1">Incoterms1</option>
+                <option value="Incoterms2">Incoterms2</option>
+              </select>
+              <span class="span"
+                ><input type="text" class="mesure" placeholder="Weight" />
+                <input type="text" class="mesure" placeholder="Height" />
+                <input type="text" class="mesure" placeholder="Width" />
+                <input type="text" class="mesure" placeholder="Length"
+              /></span>
+
+              <span class="radio">
+                <label
+                  ><input
+                    type="radio"
+                    id="express"
+                    name="choosed_service"
+                    value="express"
+                  />Express Delivery</label
+                >
+                <label>
+                  <input
+                    type="radio"
+                    id="insurance"
+                    name="choosed_service"
+                    value="insurance"
+                  />Insurance
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    id="fragile"
+                    name="choosed_service"
+                    value="service"
+                  />
+                  Fragile
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    id="packing"
+                    name="choosed_service"
+                    value="packing"
+                  />Packing
+                </label>
+              </span>
+              <input type="submit" value="Request a quote" class="btn-form" />
+            </div>
+          </form>
+        </div>
+        <div class="quote-content quote-content-2 inactive">
+          <form action="POST">
+            <div class="dataName">
+              <label for="data">Shipment Data</label
+              ><select name="Shipment" id="ship">
+                <option value="Type1">Shipment Type1</option>
+                <option value="Type2">Shipment Type2</option>
+                <option value="Type3">Shipment Type3</option>
+              </select>
+              <label for="track">Tracking Number</label>
+              <textarea
+                name="tracking"
+                id="track"
+                cols="30"
+                rows="10"
+                maxlength="200"
+                placeholder="You can enter up to a maximum of 10 airway bill numbers for tracking"
+              ></textarea>
+              <span class="radio">
+                <label
+                  ><input
+                    type="radio"
+                    id="airFreight"
+                    name="choosed_delivery"
+                    value="airFreight"
+                  />Air Freight</label
+                >
+                <label>
+                  <input
+                    type="radio"
+                    id="ocean"
+                    name="choosed_delivery"
+                    value="ocean"
+                  />Ocean Freight
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    id="road"
+                    name="choosed_delivery"
+                    value="road"
+                  />
+                  Road Freight
+                </label>
+                <label>
+                  <input
+                    type="radio"
+                    id="express"
+                    name="choosed_delivery"
+                    value="express"
+                  />Express Delivery
+                </label>
+              </span>
+              <input type="submit" value="Track & Trace" class="btn-form" />
+            </div>
+          </form>
         </div>
       </div>
-      <div class="quote-content quote-content-1">
-        <form action="POST">
-          <div class="dataName">
-            <label for="name">Personal Data</label>
-            <input type="text" placeholder="Name *" id="name" required />
-            <input type="email" placeholder="Mail *" required />
-            <input type="phone" placeholder="Phone *" required />
+    </section>
 
-            <label for="shipment">Shipment Data</label>
-            <input type="text" placeholder="Freight Type" id="name" />
-            <input type="text" placeholder="Departure City" />
-            <select name="Incoterms" id="inco">
-              <option value="Incoterms">Incoterms</option>
-              <option value="Incoterms1">Incoterms1</option>
-              <option value="Incoterms2">Incoterms2</option>
-            </select>
-            <span class="span"
-              ><input type="text" class="mesure" placeholder="Weight" />
-              <input type="text" class="mesure" placeholder="Height" />
-              <input type="text" class="mesure" placeholder="Width" />
-              <input type="text" class="mesure" placeholder="Length"
-            /></span>
+    <section class="pricing">
+      <div class="pricing-container">
+        <div class="left-part">
+          <h3 class="h3-style">Safe & Relible Cargo Solutions</h3>
+          <h1>Managing Logistic For World's Multinational Companies.</h1>
+        </div>
+        <div class="right-part">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+            aperiam amet, possimus minus labore ipsum numquam eos doloremque
+            voluptate sint! Obcaecati dolores similique quas eaque ex ut vel,
+            iure fugit.
+          </p>
 
-            <span class="radio">
-              <label
-                ><input
-                  type="radio"
-                  id="express"
-                  name="choosed_service"
-                  value="express"
-                />Express Delivery</label
-              >
-              <label>
-                <input
-                  type="radio"
-                  id="insurance"
-                  name="choosed_service"
-                  value="insurance"
-                />Insurance
-              </label>
-              <label>
-                <input
-                  type="radio"
-                  id="fragile"
-                  name="choosed_service"
-                  value="service"
-                />
-                Fragile
-              </label>
-              <label>
-                <input
-                  type="radio"
-                  id="packing"
-                  name="choosed_service"
-                  value="packing"
-                />Packing
-              </label>
-            </span>
-            <input type="submit" value="Request a quote" class="btn-form" />
+          <div class="profile">
+            <button class="btn-pricing">Pricing & Plans</button>
+            <img src="images\others/person.jpg" height="40px" alt="profile" />
+            <div class="contact-rep">
+              <span>(002)01066222564</span>
+              <p>Sales Repressentative</p>
+            </div>
           </div>
-        </form>
+        </div>
       </div>
-      <div class="quote-content quote-content-2 inactive">
-        <form action="POST">
-          <div class="dataName">
-            <label for="data">Shipment Data</label
-            ><select name="Shipment" id="ship">
-              <option value="Type1">Shipment Type1</option>
-              <option value="Type2">Shipment Type2</option>
-              <option value="Type3">Shipment Type3</option>
-            </select>
-            <label for="track">Tracking Number</label>
-            <textarea
-              name="tracking"
-              id="track"
-              cols="30"
-              rows="10"
-              maxlength="200"
-              placeholder="You can enter up to a maximum of 10 airway bill numbers for tracking"
-            ></textarea>
-            <span class="radio">
-              <label
-                ><input
-                  type="radio"
-                  id="airFreight"
-                  name="choosed_delivery"
-                  value="airFreight"
-                />Air Freight</label
-              >
-              <label>
-                <input
-                  type="radio"
-                  id="ocean"
-                  name="choosed_delivery"
-                  value="ocean"
-                />Ocean Freight
-              </label>
-              <label>
-                <input
-                  type="radio"
-                  id="road"
-                  name="choosed_delivery"
-                  value="road"
-                />
-                Road Freight
-              </label>
-              <label>
-                <input
-                  type="radio"
-                  id="express"
-                  name="choosed_delivery"
-                  value="express"
-                />Express Delivery
-              </label>
-            </span>
-            <input type="submit" value="Track & Trace" class="btn-form" />
-          </div>
-        </form>
+    </section>
+
+    <section class="article">
+      <div class="title">
+        <h3 class="h3-style">Insight and Trends</h3>
+        <h1>Recent Articles</h1>
+        <p>
+          Follow our latest news and thoughts which focuses exclusively on
+          insight, industry trends, top news headlines.
+        </p>
+      </div>
+      <div class="article-content-container">
+        <div class="article-content">
+          <img
+            src="images/others/artic (1).jpg"
+            width="300"
+            height="270"
+            alt="art1"
+          />
+          <br />
+          <h4>Industry</h4>
+          <br />
+          <h2>
+            Kale Logistics to develop e-marketplace for booking air cargo
+            capacity
+          </h2>
+
+          <h5>December 11, 2021</h5>
+          <br />
+          <p>
+            Indian logistics software provider Kale Logistics Solutions is
+            developing an e-marketplace for booking air cargo capacity that is
+            set to launch in 2022. Kale’s Logistics e-Marketplace will offer air
+            cargo and logistics services, including scheduling, booking and
+            payment, and trucking services, Kale Logistics Director Amar More
+            told Air Cargo World. “The subsequent benefits of this...
+          </p>
+          <br />
+          <a href="#" class="link"
+            ><span class="inactive2">&#8594;</span> Read More</a
+          >
+        </div>
+        <div class="article-content">
+          <img
+            src="images/others/artic (2).jpg"
+            width="300"
+            height="270"
+            alt="art1"
+          />
+          <h4>Economy</h4>
+          <br />
+          <h2>What future holds for maritime logistics in Serbia?</h2>
+          <h5>November 25, 2021</h5>
+          <br />
+          <p>
+            The logistics sector is the backbone of any economy. Despite weak
+            economic sentiments, the industry will continue to witness growth.
+            In fact, Serbia is currently the prime logistics service provider in
+            Eastern Europe. Besides other modes of transportation, maritime
+            logistics is one sector that can grow tremendously but is not fully
+            explored...
+          </p>
+          <br />
+          <a href="#" class="link"
+            ><span class="inactive2">&#8594;</span> Read More</a
+          >
+        </div>
+        <div class="article-content">
+          <img
+            src="images/others/artic (3).jpg"
+            width="300"
+            height="270"
+            alt="art1"
+          />
+          <h4>Industry, Engineering</h4>
+          <br />
+          <h2>Success for growth rooted in sustainable innovative logistics</h2>
+          <h5>October 03, 2021</h5>
+          <br />
+          <p>
+            To succeed in the ever-changing fashion industry, brands and
+            retailers need to find the right balance between sustainability and
+            innovation in their logistic operations. Finding the right
+            end-to-end fashion logistic partner, who can offer seamless
+            logistics and supply chain management, is crucial to boosting a
+            brand’s success, from a fast-growing start-up to an established
+            international fashion brand...
+          </p>
+          <br />
+          <a href="#" class="link"
+            ><span class="inactive2">&#8594;</span> Read More</a
+          >
+        </div>
       </div>
     </section>
     <script src="scrypt.js"></script>
