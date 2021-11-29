@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Lazy Images</title>
+    <title>Lohenskop</title>
+    <link rel="icon" type="image/png" href="images/logos/New folder/favicon-32x32.png"/>
   </head>
   <body>
     <header>
       <img src="images/logos/logo.png" alt="logo" class="left" />
       <nav>
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">PROJECTS</a></li>
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link">HOME</a></li>
+          <li><a href="#projects" class="nav-link">ABOUT</a></li>
+          <li><a href="#quote" class="nav-link">REQUEST A QUOTE</a></li>
+          <li><a href="#blog" class="nav-link">BLOG</a></li>
         </ul>
       </nav>
     </header>
@@ -25,6 +27,7 @@
         <button class="btn">Contact</button>
       </div>
     </section>
+
     <section class="work">
       <div class="container">
         <img
@@ -59,7 +62,7 @@
       </div>
     </section>
 
-    <section class="warehouse">
+    <section class="warehouse" id="projects">
       <h1>Our Projects</h1>
       <div class="projects">
         <div class="projectOne">
@@ -116,7 +119,7 @@
       </div>
     </section>
 
-    <section class="quote">
+    <section class="quote" id="quote">
       <div class="quote-container">
         <div class="quote-tab">
           <div
@@ -285,7 +288,7 @@
       </div>
     </section>
 
-    <section class="article">
+    <section class="article" id="blog">
       <div class="title">
         <h3 class="h3-style">Insight and Trends</h3>
         <h1>Recent Articles</h1>
@@ -378,6 +381,87 @@
         </div>
       </div>
     </section>
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d2829.8218256386976!2d20.478054290168306!3d44.82519435697397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m5!1s0x475a7ab62875047b%3A0x28717dbdb31ad48b!2z0JvRg9C60LAg0JHQtdC-0LPRgNCw0LQgLSDQmtCw0YDQs9C-INGG0LXQvdGC0LDRgA!3m2!1d44.824383399999995!2d20.4764639!4m0!5e0!3m2!1ssr!2srs!4v1638010377540!5m2!1ssr!2srs"
+        width="1650"
+        height="600"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+      <div class="about-us">
+        <h1>Global Office</h1>
+        <div class="address">
+        <p>
+          <span>
+            <img src="images/icons/location-small.svg" alt="location" /> Ante
+            Protica 45b, 11300 Belgrade, Serbia
+          </span>
+
+          <span></span>
+        </p>
+
+        <p>
+            <img
+              src="images/icons/mail-red.svg"
+              height="21"
+              width="21"
+              alt="location"
+            />
+            <a href="mailto:lohneskop@email.com">lohneskop@email.com</a>
+          </span>
+        </p>
+        <p>
+          <span>
+            <img
+              src="images/icons/phone-red.svg"
+              alt="phone"
+              height="21"
+              width="21"
+            />
+            <a href="tel:00381112255667">(+381)0112254562228</a></span
+          >
+        </p>
+      </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container1">
+        <div class="left">
+          <img src="images/logos/logoSingle-removebg-preview.png" alt="logo">
+        </div>
+
+        <div class="right">
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nesciunt quam placeat.</h3>
+          <form action="POST">
+            <input type="email" placeholder="Your Email Address" class="input" required>
+            <input type="button" value="Sign Up!" class="btn2">
+          </form>
+        </div>
+      </div>
+      <div class="container2">
+        <div class="left-info">
+          <h4>About</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas in labore suscipit quod adipisci sapiente beatae explicabo autem.</p>
+          <span class="icons"><img src="images/icons/face.svg" alt="facebook" height="30" width="30"> <img src="images/icons/insta.svg" alt="instagram" height="30" width="30"> <img src="images/icons/twit.svg" alt="twitter" height="30" width="30"></span>
+        </div>
+        <div class="right-info">
+          <h4>Quick Contact</h4>
+          
+         
+          <div class="num">  <p>If you have any question, feel free to contact us.</p> <a href="tel:00381112255667"><img src="images/icons/phone-red.svg" alt="phone"> <span>(+381)0112254562228</span>  </a>
+            <p><address>Ante
+              Protica 45b, 11300 Belgrade, Serbia</address></p></div>
+         
+        </div>
+      </div>
+      <div class="title">
+        <p> &#169;Lohneskop, made with passon by <a href="#">aleksandarvukasovic</a></p>
+      </div>
+    </footer>
     <script src="scrypt.js"></script>
   </body>
 </html>
