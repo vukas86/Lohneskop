@@ -10,12 +10,13 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-header {
+.nav {
   display: flex;
   justify-content: space-around;
   border-bottom: 2px solid black;
-  background-color: cadetblue;
+  background-color: white;
   height: 60px;
+  width: 100%;
 }
 
 nav {
@@ -45,6 +46,12 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: rgb(179, 5, 5);
+}
+
+.sticky {
+  position: fixed;
+  z-index: 3500;
+  transition: all 0.5s ease;
 }
 
 .about {
@@ -83,6 +90,7 @@ nav ul li a {
   flex-direction: column;
   justify-content: center;
   backdrop-filter: blur(5px);
+  z-index: 2000;
 }
 
 .cta h3 {
@@ -242,6 +250,25 @@ nav ul li a {
   background-color: white;
   margin: 0 auto;
 }
+.sticky-hidden {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  visibility: hidden;
+}
+
+.sticky-hidden a {
+  border: 1px solid white;
+  background-color: blue;
+  padding: 5px;
+  padding-top: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.sticky-hidden a:hover {
+  background-color: rgb(5, 5, 186);
+}
 
 .dataName {
   display: flex;
@@ -379,6 +406,11 @@ textarea {
   padding: 50px 0;
   /* margin: 50px; */
   background-color: #fcfcfc;
+}
+
+.blur-img {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
 
 .title {
