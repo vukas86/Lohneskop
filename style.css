@@ -657,7 +657,7 @@ textarea {
     font-size: 40px;
   }
   .container {
-    width: 90px;
+    width: 119px;
   }
   .myframe {
     width: 100%;
@@ -672,13 +672,19 @@ textarea {
   .container h2 {
     font-size: 12px;
   }
+
+  #projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .projects {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .projectOne {
-    width: 70%;
+    width: 80%;
   }
   .details {
     height: 300px;
@@ -691,15 +697,15 @@ textarea {
     width: 50%;
   } */
   .quote-tab-div {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .quote-content {
-    width: 358px;
+    width: 458px;
     margin: 0;
   }
   .quote-tab-div span img {
-    margin-right: 8px;
+    margin-right: 5px;
   }
 
   .mesure {
@@ -736,7 +742,8 @@ textarea {
     margin-bottom: 15px;
   }
   .right-part img {
-    width: 50px;
+    width: 60px;
+    height: 55px;
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -745,6 +752,10 @@ textarea {
   .profile {
     display: flex;
     flex-direction: column;
+  }
+
+  .myframe {
+    display: none;
   }
   .about-us {
     position: inherit;
