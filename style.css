@@ -701,11 +701,12 @@ textarea {
   }
 
   .quote-content {
-    width: 400px;
+    width: 395px;
     margin: 0;
   }
   .quote-tab-div span img {
     margin-right: 5px;
+    height: 40px;
   }
 
   .mesure {
