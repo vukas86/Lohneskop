@@ -638,8 +638,12 @@ textarea {
   color: #21d4fd;
 }
 
-@media only screen and (max-width: 480px),
-  only screen and (max-device-width: 480px) {
+@media only screen and (max-width: 550px),
+  only screen and (max-device-width: 550px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
   nav {
     display: none;
   }
