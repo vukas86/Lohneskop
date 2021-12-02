@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Lohenskop</title>
     <link rel="icon" type="image/png" href="images/logos/New folder/favicon-32x32.png"/>
+    <script defer src="scrypt.js"></script>
   </head>
   <body>
     <div id="home"></div>
@@ -21,7 +22,10 @@
           <li><a href="#blog" class="nav-link">BLOG</a></li>
         </ul>
        </nav>
-       </div>
+       <img src="images/icons/hamburger-button.256x199-removebg-preview.png" alt="hamburger" height="25" width="30" class="burger"> 
+      </div>
+  
+
     </header>
     <section class="about">
       <h1>Connect with the world here</h1>
@@ -147,7 +151,7 @@
           </div>
         </div>
         <div class="quote-content quote-content-1">
-          <form action="POST">
+          <form action="POST" class="form-container" >
             <div class="dataName">
               <label for="name">Personal Data</label>
               <input type="text" placeholder="Name *" id="name" required />
@@ -208,8 +212,9 @@
             </div>
           </form>
         </div>
+
         <div class="quote-content quote-content-2 inactive">
-          <form action="POST">
+          <form action="POST" class="form-container" >
             <div class="dataName">
               <label for="data">Shipment Data</label
               ><select name="Shipment" id="ship">
@@ -414,7 +419,6 @@
             Protica 45b, 11300 Belgrade, Serbia
           </span>
 
-          <span></span>
         </p>
 
         <p>
@@ -476,6 +480,6 @@
         <p> &#169;Lohneskop, made with passon by <a href="#">aleksandarvukasovic</a></p>
       </div>
     </footer>
-    <script src="scrypt.js"></script>
+    <!-- <script src="scrypt.js"></script> -->
   </body>
 </html>
