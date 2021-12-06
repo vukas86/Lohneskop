@@ -103,3 +103,25 @@ const imgObserver = new IntersectionObserver(loadImg, {
 });
 
 imgTargets.forEach((img) => imgObserver.observe(img));
+
+const closeIcon = document.querySelector(".burger");
+
+closeIcon.addEventListener(
+  "click",
+  function (event) {
+    if (
+      event.target.src ===
+      "images/icons/hamburger-button.256x199-removebg-preview.png"
+    )
+      return;
+
+    event.target.src = event.target.dataset.icon;
+    event.target.dataset.icon =
+      "images/icons/hamburger-button.256x199-removebg-preview.png";
+    event.target.src ===
+      "images/icons/hamburger-button.256x199-removebg-preview.png";
+
+    console.log(event.target);
+  },
+  false
+);
