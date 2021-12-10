@@ -1,3 +1,7 @@
+:root {
+  --color-primary: #fc3c3c;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -119,7 +123,7 @@ nav ul li a {
 }
 
 .btn:hover {
-  background: #fc3c3c;
+  background: var(--color-primary);
   text-decoration: none;
 }
 
@@ -372,7 +376,7 @@ textarea {
 
 .btn-pricing {
   padding: 10px 20px;
-  color: #fc3c3c;
+  color: var(--color-primary);
   font-weight: bold;
   background-color: white;
   border: 2px solid red;
@@ -382,7 +386,7 @@ textarea {
 
 .btn-pricing:hover {
   color: white;
-  background-color: #fc3c3c;
+  background-color: var(--color-primary);
 }
 
 .profile {
@@ -438,7 +442,7 @@ textarea {
 
 .article-content h4 {
   font-weight: normal;
-  color: #fc3c3c;
+  color: var(--color-primary);
 }
 
 .article-content h5 {
