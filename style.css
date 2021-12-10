@@ -722,7 +722,7 @@ textarea {
   }
 
   .span input:nth-child(odd) {
-    margin-right: 3px;
+    margin-right: 2px;
   }
   .radio {
     margin-left: 0;
