@@ -167,7 +167,7 @@
               <input type="text" placeholder="Freight Type" id="name" />
               <input type="text" placeholder="Departure City" />
               <select name="Incoterms" id="inco">
-                <option value="Incoterms">Incoterms</option>
+                <option value="" selected disabled hidden >Incoterms</option>
                 <option value="Incoterms1">Incoterms1</option>
                 <option value="Incoterms2">Incoterms2</option>
               </select>
@@ -222,7 +222,7 @@
           <form action="POST" class="form-container" >
             <div class="dataName">
               <label for="data">Shipment Data</label
-              ><select name="Shipment" id="ship">
+              ><select name="Shipment" id="ship" >
                 <option value="Type1">Shipment Type1</option>
                 <option value="Type2">Shipment Type2</option>
                 <option value="Type3">Shipment Type3</option>
@@ -253,15 +253,7 @@
                     value="ocean"
                   />Ocean Freight
                 </label>
-                <label>
-                  <input
-                    type="radio"
-                    id="road"
-                    name="choosed_delivery"
-                    value="road"
-                  />
-                  Road Freight
-                </label>
+            
                 <label>
                   <input
                     type="radio"
