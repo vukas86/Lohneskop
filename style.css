@@ -721,6 +721,15 @@ textarea {
     width: 23.6%;
   }
 
+  .pack {
+    display: flex;
+    align-items: center;
+  }
+
+  .pack span {
+    margin-left: 5px;
+  }
+
   .span input:nth-child(odd) {
     margin-right: 2px;
   }
