@@ -707,10 +707,15 @@ textarea {
     display: flex;
     flex-direction: column;
   }
+
+  .quote-tab {
+    width: 394px;
+  }
   /*  .form-container {
     width: 50%;
   } */
   .quote-tab-div {
+    padding: 10px;
     font-size: 12px;
   }
 
