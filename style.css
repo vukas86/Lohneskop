@@ -52,6 +52,48 @@ nav ul li a {
   color: rgb(179, 5, 5);
 }
 
+.nav__respon-links {
+  background-color: rgba(251, 251, 251, 0.7);
+  width: 25%;
+  position: relative;
+}
+
+.nav__respon-links ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.nav__respon-links ul li {
+  margin: 0;
+  padding: 2px;
+}
+
+.nav__respon-links ul li a {
+  color: black;
+  font-size: 65%;
+}
+
+.nav__respon-links ul li:hover {
+  background-color: rgb(149, 162, 175);
+}
+
+.nav__respon-links ul li a:hover {
+  color: red;
+}
+.nav__respon-links-open {
+  position: absolute;
+  top: 8.2%;
+  right: 20%;
+  border: 1px solid #ccc;
+  padding: 0.5rem 0;
+  border-radius: 3px;
+}
+
+.nav__respon-links-close {
+  display: none;
+}
+
 .burger {
   display: none;
 }
@@ -654,7 +696,7 @@ textarea {
   body {
     overflow-x: hidden;
   }
-  nav {
+  .nav-links {
     display: none;
   }
   .burger {

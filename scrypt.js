@@ -104,7 +104,7 @@ const imgObserver = new IntersectionObserver(loadImg, {
 
 imgTargets.forEach((img) => imgObserver.observe(img));
 
-const closeIcon = document.querySelector(".burger");
+/* const closeIcon = document.querySelector(".burger");
 
 closeIcon.addEventListener(
   "click",
@@ -124,4 +124,16 @@ closeIcon.addEventListener(
     console.log(event.target);
   },
   false
-);
+); */
+
+const hamburgerElement = document.querySelector(".burger");
+
+const menuElement = document.querySelector(".nav__respon-links");
+
+hamburgerElement.addEventListener("click", () => {
+  if (menuElement.classList.contains("nav__respon-links-close")) {
+    menuElement.classList.remove("nav__respon-links-close");
+  } else {
+    menuElement.classList.add("nav__respon-links-close");
+  }
+});
