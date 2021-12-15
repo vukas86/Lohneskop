@@ -54,7 +54,7 @@ nav ul li a {
 
 .nav__respon-links {
   background-color: rgba(251, 251, 251, 0.7);
-  width: 25%;
+  width: 30%;
   position: relative;
 }
 
@@ -66,12 +66,12 @@ nav ul li a {
 
 .nav__respon-links ul li {
   margin: 0;
-  padding: 2px;
+  padding: 5px;
 }
 
 .nav__respon-links ul li a {
   color: black;
-  font-size: 65%;
+  font-size: 70%;
 }
 
 .nav__respon-links ul li:hover {
@@ -84,7 +84,7 @@ nav ul li a {
 .nav__respon-links-open {
   position: absolute;
   top: 8.2%;
-  right: 20%;
+  right: 15%;
   border: 1px solid #ccc;
   padding: 0.5rem 0;
   border-radius: 3px;

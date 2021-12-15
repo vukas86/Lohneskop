@@ -7,6 +7,8 @@ const scrollBtn = document.querySelector(".sticky-hidden");
 const quoteSection = document.querySelector(".quote");
 const projectSection = document.querySelector("#projects");
 const aboutSection = document.querySelector(".about");
+const hamburgerElement = document.querySelector(".burger");
+const menuElement = document.querySelector(".nav__respon-links");
 
 qouteContainer.addEventListener("click", function (e) {
   const clicked = e.target.closest(".quote-tab-div");
@@ -103,32 +105,6 @@ const imgObserver = new IntersectionObserver(loadImg, {
 });
 
 imgTargets.forEach((img) => imgObserver.observe(img));
-
-/* const closeIcon = document.querySelector(".burger");
-
-closeIcon.addEventListener(
-  "click",
-  function (event) {
-    if (
-      event.target.src ===
-      "images/icons/hamburger-button.256x199-removebg-preview.png"
-    )
-      return;
-
-    event.target.src = event.target.dataset.icon;
-    event.target.dataset.icon =
-      "images/icons/hamburger-button.256x199-removebg-preview.png";
-    event.target.src ===
-      "images/icons/hamburger-button.256x199-removebg-preview.png";
-
-    console.log(event.target);
-  },
-  false
-); */
-
-const hamburgerElement = document.querySelector(".burger");
-
-const menuElement = document.querySelector(".nav__respon-links");
 
 hamburgerElement.addEventListener("click", () => {
   if (menuElement.classList.contains("nav__respon-links-close")) {
