@@ -17,7 +17,6 @@ body {
 .nav {
   display: flex;
   justify-content: space-around;
-  border-bottom: 2px solid black;
   background-color: white;
   height: 60px;
   width: 100%;
@@ -54,8 +53,13 @@ nav ul li a {
 
 .nav__respon-links {
   background-color: rgba(251, 251, 251, 0.6);
-  width: 30%;
+  width: 100%;
   position: relative;
+  font-size: 0;
+}
+
+.nav__respon-links nav {
+  background-color: white;
 }
 
 .nav__respon-links ul {
@@ -82,12 +86,9 @@ nav ul li a {
   color: red;
 }
 .nav__respon-links-open {
-  position: absolute;
+  position: inherit;
   top: 8.2%;
   right: 10%;
-  border: 1px solid #ccc;
-  padding: 0.5rem 0;
-  border-radius: 3px;
 }
 
 .nav__respon-links-close {
@@ -507,7 +508,7 @@ input[type="radio"] {
 }
 
 .location {
-  z-index: 2000;
+  z-index: 5000;
 }
 .myIframe {
   position: relative;
@@ -534,7 +535,7 @@ input[type="radio"] {
   justify-content: center;
   padding: 10px;
   position: absolute;
-  z-index: 3000;
+  z-index: 1000;
   margin-top: 10px;
   width: 400px;
   background-color: rgb(251, 243, 230);
